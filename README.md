@@ -83,24 +83,6 @@ This implementation supports the following standard conversions:
 - `-1` if `format` is NULL.
 - Partial count if an invalid specifier is encountered (loop breaks early).
 
-## 📖 Resources
-
-For the creation of this project the following resources were used:
-- [GeeksforGeeks - Variadic Functions in c](https://www.geeksforgeeks.org/c/variadic-functions-in-c/)
-- [cppreference - Variadic Functions](https://cppreference.com/w/c/variadic.html)
-- [GeeksforGeeks - 32-bit and 64-bit operating systems](https://www.geeksforgeeks.org/operating-systems/32-bit-vs-64-bit-operating-systems/)
-- Peer to peer - For trouble shooting or testing different approaches
-
-**AI usage:**
-
-Claude by Anthropic was used in this project for the following:
-- **As a teacher:** Explaining variadic function mechanics, `va_list` internals, 
-and low-level C behavior.
-- **Rewriting comments:** Improving clarity and precision of function-level documentation.
-- **Testing:** Discussing edge cases and verifying expected behavior against 
-the standard `printf()`.
-
-AI was NOT used to write or generate any code. All function bodies were written by myself.
 
 ## 🤖 Algorithm & Data Structure
 
@@ -145,3 +127,22 @@ also handles `'\0'` explicitly via `write`, since string-based output functions 
 - `ft_printf_str` prints `"(null)"` for a NULL string argument.
 - `ft_printf_ptr` prints `"(nil)"` for a NULL pointer argument; non-NULL pointers are cast
 to `uintptr_t` and printed with a `"0x"` prefix.
+
+## 📖 Resources
+
+For the creation of this project the following resources were used:
+- [GeeksforGeeks - Variadic Functions in c](https://www.geeksforgeeks.org/c/variadic-functions-in-c/)
+- [cppreference - Variadic Functions](https://cppreference.com/w/c/variadic.html)
+- [GeeksforGeeks - 32-bit and 64-bit operating systems](https://www.geeksforgeeks.org/operating-systems/32-bit-vs-64-bit-operating-systems/)
+- Peer to peer - For trouble shooting or testing different approaches
+
+**AI usage:**
+
+Claude by Anthropic was used in this project for the following:
+- **As a teacher:** Explaining variadic function mechanics, `va_list` internals, 
+and low-level C behavior.
+- **Rewriting comments:** Improving clarity and precision of function-level documentation.
+- **Testing:** Discussing edge cases and verifying expected behavior against 
+the standard `printf()`.
+
+AI was NOT used to write or generate any code. All function bodies were written by myself.
